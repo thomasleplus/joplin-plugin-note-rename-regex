@@ -11,12 +11,13 @@ permissions: {}
 jobs:
 
   check:
-    name: Build with NPM
+    name: Build with npm
     runs-on: ubuntu-latest
     steps:
     - name: Check out
       uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - name: Setup
+      uses: actions/setup-node@v3
       with:
         node-version: 14
     - name: Build
