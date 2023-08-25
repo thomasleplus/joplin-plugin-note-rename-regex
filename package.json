@@ -21,7 +21,7 @@
     "glob": "^10.3.3",
     "joplinplugindevtools": "^1.0.14",
     "on-build-webpack": "^0.1.0",
-    "tar": "^6.0.5",
+    "tar": "^6.1.15",
     "ts-loader": "^7.0.5",
     "typescript": "^5.2.2",
     "webpack": "^4.43.0",
