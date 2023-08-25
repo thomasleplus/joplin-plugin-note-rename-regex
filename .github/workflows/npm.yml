@@ -1,0 +1,24 @@
+---
+name: "npm"
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+
+  check:
+    name: Build with npm
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out
+      uses: actions/checkout@v3
+    - name: Setup
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+    - name: Build
+      run: npm install && npm run dist
