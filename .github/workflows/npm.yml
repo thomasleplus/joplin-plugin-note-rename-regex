@@ -21,4 +21,4 @@ jobs:
       with:
         node-version: 14
     - name: Build
-      run: npm run dist
+      run: npm install -g yo generator-joplin && yo joplin && npm run dist
