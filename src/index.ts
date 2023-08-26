@@ -19,9 +19,7 @@ joplin.plugins.register({
 
 		const searchAndReplaceNoteNames = async (search: string, replace: string) => {
 			await renameSelected((noteName: string) => {
-				// Escape regex characters so they don't affect the search
-				const escapedSearch = search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-				return noteName.replace(new RegExp(escapedSearch, "g"), replace);
+				return noteName.replace(new RegExp(search, "g"), replace);
 			});
 		};
 
