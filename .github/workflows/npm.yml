@@ -14,6 +14,8 @@ jobs:
     name: Build with npm
     runs-on: ubuntu-latest
     steps:
+    - name: Set REPOSITORY
+      run: echo "REPOSITORY=${GITHUB_REPOSITORY#*/}" >> "${GITHUB_ENV}"
     - name: Check out
       uses: actions/checkout@v3
     - name: Setup
@@ -25,5 +27,5 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: joplin-plugin-note-rename
+        name: ${{ env.REPOSITORY }}
         path: dist/
