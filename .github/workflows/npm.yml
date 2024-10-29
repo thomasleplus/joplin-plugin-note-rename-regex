@@ -9,24 +9,23 @@ on:
 permissions: {}
 
 jobs:
-
   check:
     name: Build with npm
     runs-on: ubuntu-latest
     steps:
-    - name: Set REPOSITORY
-      run: echo "REPOSITORY=${GITHUB_REPOSITORY#*/}" >> "${GITHUB_ENV}"
-    - name: Check out
-      uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
-    - name: Setup
-      uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
-      with:
-        node-version: 14
-    - name: Build
-      if: "github.ref == '@TL FIXME: broken'"
-      run: npm install && npm run dist
-    - name: Upload artifacts
-      uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
-      with:
-        name: ${{ env.REPOSITORY }}
-        path: dist/
+      - name: Set REPOSITORY
+        run: echo "REPOSITORY=${GITHUB_REPOSITORY#*/}" >> "${GITHUB_ENV}"
+      - name: Check out
+        uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
+      - name: Setup
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        with:
+          node-version: 14
+      - name: Build
+        if: "github.ref == '@TL FIXME: broken'"
+        run: npm install && npm run dist
+      - name: Upload artifacts
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
+        with:
+          name: ${{ env.REPOSITORY }}
+          path: dist/
