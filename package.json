@@ -19,7 +19,7 @@
     "copy-webpack-plugin": "^6.1.0",
     "fs-extra": "^11.2.0",
     "glob": "^10.3.12",
-    "joplinplugindevtools": "^1.0.14",
+    "joplinplugindevtools": "^1.0.16",
     "on-build-webpack": "^0.1.0",
     "tar": "^7.1.0",
     "ts-loader": "^7.0.5",
