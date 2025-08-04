@@ -13,19 +13,23 @@
   "files": [
     "publish"
   ],
+  "browser": {
+    "fs": false,
+    "child_process": false
+  },
   "devDependencies": {
-    "@types/node": "^20.12.9",
-    "chalk": "^5.3.0",
-    "copy-webpack-plugin": "^6.1.0",
-    "fs-extra": "^11.2.0",
-    "glob": "^10.3.12",
-    "joplinplugindevtools": "^1.0.16",
-    "on-build-webpack": "^0.1.0",
-    "tar": "^7.1.0",
-    "ts-loader": "^7.0.5",
-    "typescript": "^5.4.5",
-    "webpack": "^5.95.0",
-    "webpack-cli": "^4.10.0",
-    "yargs": "^17.7.2"
+    "@types/node": "24.2.0",
+    "chalk": "5.5.0",
+    "copy-webpack-plugin": "13.0.0",
+    "fs-extra": "11.3.0",
+    "glob": "11.0.3",
+    "joplinplugindevtools": "1.0.16",
+    "on-build-webpack": "0.1.0",
+    "tar": "7.4.3",
+    "ts-loader": "9.5.2",
+    "typescript": "5.9.2",
+    "webpack": "5.101.0",
+    "webpack-cli": "6.0.1",
+    "yargs": "18.0.0"
   }
 }
