@@ -1,6 +1,11 @@
-# Joplin Plugin: Note Rename
+# Joplin Plugin: Note Rename by Regexp
 
-Rename [Joplin](https://joplinapp.org/) note titles in bulk by adding a prefix, suffix, or by search and replace.
+> [!NOTE] 
+> This a forked version of the [Note Rename](/cuibonobo/joplin-plugin-note-rename)
+> plugin where the search and replace feature was enhanced to support
+> regular expressions.
+
+Rewrite [Joplin](https://joplinapp.org/) note titles in bulk by regexp search and replace.
 
 ## Usage
 
@@ -9,19 +14,6 @@ This plugin works by altering the titles of the currently-selected notes. Select
 ![Select notes to alter their titles](./assets/note-rename-toolbar-buttons.png)
 
 There are similar options in the **Tools** menu and the right-click context menu for the selected notes. Click the button or menu item for the operation you'd like to perform.
-
-### Prefix / Suffix
-
-![Popup window for Prefix/Suffix command](./assets/note-rename-alter.png)
-
-This command adds a prefix or suffix to the selected notes. First, select a mode option:
-
-- **Prefix** will add the text in the input box to the beginning of the note title.
-- **Suffix** will add the text in the input box to the end of the note title.
-
-Type the text that you would like to add into the **Text** box.
-
-To perform the operation, click **OK**. If you've changed your mind, click **Cancel**.
 
 ### Search and Replace
 
