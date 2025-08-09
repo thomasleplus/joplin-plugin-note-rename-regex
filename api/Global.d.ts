@@ -1,8 +1,7 @@
+/* tslint:disable:n/no-missing-import. */
 import Plugin from "../Plugin";
 import Joplin from "./Joplin";
-/**
- * @ignore
- */
+/* tslint:enable:n/no-missing-import. */
 /**
  * @ignore
  */

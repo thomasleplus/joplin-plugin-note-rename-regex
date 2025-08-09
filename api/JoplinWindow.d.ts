@@ -1,4 +1,6 @@
+/* tslint:disable:n/no-missing-import. */
 import Plugin from "../Plugin";
+/* tslint:enable:n/no-missing-import. */
 export default class JoplinWindow {
   private store_;
   constructor(_plugin: Plugin, store: any);

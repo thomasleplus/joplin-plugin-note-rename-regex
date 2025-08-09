@@ -1,5 +1,7 @@
+/* tslint:disable:n/no-missing-import. */
 import Plugin from "../Plugin";
 import { ContentScriptType } from "./types";
+/* tslint:enable:n/no-missing-import. */
 export default class JoplinContentScripts {
   private plugin;
   constructor(plugin: Plugin);

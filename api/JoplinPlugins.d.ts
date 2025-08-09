@@ -1,5 +1,7 @@
+/* tslint:disable:n/no-missing-import. */
 import Plugin from "../Plugin";
 import { ContentScriptType, Script } from "./types";
+/* tslint:enable:n/no-missing-import. */
 /**
  * This class provides access to plugin-related features.
  */
