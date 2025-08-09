@@ -1,7 +1,7 @@
 # Joplin Plugin: Note Rename by Regular Expression
 
-[![NPM](https://github.com/leplusorg/ristretto/workflows/NPM/badge.svg)](https://github.com/leplusorg/ristretto/actions?query=workflow:"NPM")
-[![CodeQL](https://github.com/leplusorg/ristretto/workflows/CodeQL/badge.svg)](https://github.com/leplusorg/ristretto/actions?query=workflow:"CodeQL")
+[![NPM](https://github.com/thomasleplus/joplin-plugin-note-rename-regex/workflows/NPM/badge.svg)](https://github.com/thomasleplus/joplin-plugin-note-rename-regex/actions?query=workflow:"NPM")
+[![CodeQL](https://github.com/thomasleplus/joplin-plugin-note-rename-regex/workflows/CodeQL/badge.svg)](https://github.com/thomasleplus/joplin-plugin-note-rename-regex/actions?query=workflow:"CodeQL")
 
 > [!NOTE]
 > This a forked version of the [Note Rename](/cuibonobo/joplin-plugin-note-rename)
