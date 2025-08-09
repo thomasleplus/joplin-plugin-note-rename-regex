@@ -1,7 +1,7 @@
-// eslint-disable n/no-missing-import
+// eslint-disable node/no-missing-import
 import Plugin from "../Plugin";
 import { ContentScriptType, Script } from "./types";
-// eslint-enable n/no-missing-import
+// eslint-enable node/no-missing-import
 /**
  * This class provides access to plugin-related features.
  */

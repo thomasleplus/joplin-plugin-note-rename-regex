@@ -18,6 +18,7 @@ joplin.plugins.register({
       renameRegexFn: (noteName: string) => string,
     ) => {
       const noteIds = await joplin.workspace.selectedNoteIds();
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const notes: any[] = [];
       for (const noteId of noteIds) {
         notes.push(

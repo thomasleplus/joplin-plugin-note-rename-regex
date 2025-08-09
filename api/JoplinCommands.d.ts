@@ -1,7 +1,7 @@
-// eslint-disable n/no-missing-import
+// eslint-disable node/no-missing-import
 import { Command } from "./types";
 import Plugin from "../Plugin";
-// eslint-enable n/no-missing-import
+// eslint-enable node/no-missing-import
 /**
  * This class allows executing or registering new Joplin commands. Commands
  * can be executed or associated with

@@ -1,4 +1,4 @@
-/* tslint:disable:multiline-comment-style */
+/* eslint-disable multiline-comment-style */
 
 // =================================================================
 // Command API types
@@ -214,6 +214,7 @@ export interface Script {
   onStart?(event: any): Promise<void>;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface Disposable {
   // dispose():void;
 }
