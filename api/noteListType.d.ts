@@ -1,6 +1,6 @@
-// tslint:disable:no-missing-import
+// eslint-disable n/no-missing-import
 import { Size } from "./types";
-// tslint:enable:no-missing-import
+// eslint-enable n/no-missing-import
 
 type ListRendererDatabaseDependency =
   | "folder.created_time"

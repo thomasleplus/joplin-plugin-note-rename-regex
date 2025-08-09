@@ -1,4 +1,4 @@
-// tslint:disable:no-missing-import
+// eslint-disable n/no-missing-import
 import Plugin from "../Plugin";
 import { FolderEntity } from "../../database/types";
 import {
@@ -6,7 +6,7 @@ import {
   EditContextMenuFilterObject,
   FilterHandler,
 } from "./types";
-// tslint:enable:no-missing-import
+// eslint-enable n/no-missing-import
 declare enum ItemChangeEventType {
   Create = 1,
   Update = 2,

@@ -1,7 +1,7 @@
-// tslint:disable:no-missing-import
+// eslint-disable n/no-missing-import
 import Plugin from "../Plugin";
 import { ActivationCheckCallback, ViewHandle, UpdateCallback } from "./types";
-// tslint:enable:no-missing-import
+// eslint-enable n/no-missing-import
 /**
  * Allows creating alternative note editors. You can create a view to handle loading and saving the
  * note, and do your own rendering.

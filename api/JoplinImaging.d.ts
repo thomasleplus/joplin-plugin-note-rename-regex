@@ -1,6 +1,6 @@
-// tslint:disable:no-missing-import
+// eslint-disable n/no-missing-import
 import { Rectangle } from "./types";
-// tslint:enable:no-missing-import
+// eslint-enable n/no-missing-import
 export interface CreateFromBufferOptions {
   width?: number;
   height?: number;

@@ -1,8 +1,8 @@
 import { Store } from "redux";
-// tslint:disable:no-missing-import
+// eslint-disable n/no-missing-import
 import Plugin from "../Plugin";
 import { ListRenderer } from "./noteListType";
-// tslint:enable:no-missing-import
+// eslint-enable n/no-missing-import
 /**
  * This API allows you to customise how each note in the note list is rendered.
  * The renderer you implement follows a unidirectional data flow.

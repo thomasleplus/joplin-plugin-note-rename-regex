@@ -1,7 +1,7 @@
-// tslint:disable:no-missing-import
+// eslint-disable n/no-missing-import
 import Plugin from "../Plugin";
 import { ButtonSpec, ViewHandle, DialogResult, Toast } from "./types";
-// tslint:enable:no-missing-import
+// eslint-enable n/no-missing-import
 /**
  * Allows creating and managing dialogs. A dialog is modal window that
  * contains a webview and a row of buttons. You can update the
