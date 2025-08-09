@@ -26,7 +26,9 @@ joplin.plugins.register({
       });
     };
 
-    const renameRegexSelected = async (renameRegexFn: (noteName: string) => string) => {
+    const renameRegexSelected = async (
+      renameRegexFn: (noteName: string) => string,
+    ) => {
       const noteIds = await joplin.workspace.selectedNoteIds();
       const notes: any[] = [];
       for (let noteId of noteIds) {
@@ -45,7 +47,9 @@ joplin.plugins.register({
       }
     };
 
-    const replaceHandle = await joplin.views.dialogs.create("noteNameReplaceRegex");
+    const replaceHandle = await joplin.views.dialogs.create(
+      "noteNameReplaceRegex",
+    );
     await joplin.views.dialogs.setHtml(
       replaceHandle,
       `
@@ -87,9 +91,7 @@ joplin.plugins.register({
       MenuItemLocation.NoteListContextMenu,
     );
 
-    const menuItems = [
-      { commandName: "noteNameReplaceRegex" },
-    ];
+    const menuItems = [{ commandName: "noteNameReplaceRegex" }];
     await joplin.views.menus.create(
       "noteRenameRegexToolsMenu",
       "Note Rename Regex",
