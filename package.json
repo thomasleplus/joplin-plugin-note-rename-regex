@@ -29,7 +29,9 @@
   "eslintConfig": {
     "overrides": [
       {
-        "files": ["*.ts"],
+        "files": [
+          "*.ts"
+        ],
         "rules": {
           "n/no-missing-import": "off"
         }
