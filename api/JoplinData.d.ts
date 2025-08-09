@@ -1,8 +1,8 @@
-/* tslint:disable:node/no-missing-import. */
+/* eslint-disable node/no-missing-import. */
 import { ModelType } from "../../../BaseModel";
 import Plugin from "../Plugin";
 import { Path } from "./types";
-/* tslint:enable:node/no-missing-import. */
+/* eslint-enable node/no-missing-import. */
 /**
  * This module provides access to the Joplin data API: https://joplinapp.org/help/api/references/rest_api
  * This is the main way to retrieve data, such as notes, notebooks, tags, etc.

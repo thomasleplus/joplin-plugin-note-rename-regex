@@ -1,6 +1,6 @@
-/* tslint:disable:node/no-missing-import. */
+/* eslint-disable node/no-missing-import. */
 import { FilterHandler } from "../../../eventManager";
-/* tslint:enable:node/no-missing-import. */
+/* eslint-enable node/no-missing-import. */
 /**
  * @ignore
  *

@@ -1,6 +1,6 @@
 /* eslint-disable multiline-comment-style */
 
-/* tslint:disable:node/no-missing-import. */
+/* eslint-disable node/no-missing-import. */
 import { Size } from "./types";
 /* tslint:ensable:node/no-missing-import. */
 
