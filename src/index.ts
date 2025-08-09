@@ -5,18 +5,6 @@ joplin.plugins.register({
   onStart: async function () {
     console.info("Note Rename Regex plugin started!");
 
-    const prefixNoteNames = async (prefix: string) => {
-      await renameRegexSelected((noteName: string) => {
-        return prefix + noteName;
-      });
-    };
-
-    const suffixNoteNames = async (suffix: string) => {
-      await renameRegexSelected((noteName: string) => {
-        return noteName + suffix;
-      });
-    };
-
     const searchAndReplaceNoteNames = async (
       search: string,
       replace: string,
