@@ -54,15 +54,18 @@ export declare enum ItemFlow {
   TopToBottom = "topToBottom",
   LeftToRight = "leftToRight",
 }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type RenderNoteView = Record<string, any>;
 export interface OnChangeEvent {
   elementId: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   value: any;
   noteId: string;
 }
 export interface OnClickEvent {
   elementId: string;
 }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type OnRenderNoteHandler = (props: any) => Promise<RenderNoteView>;
 export type OnChangeHandler = (event: OnChangeEvent) => Promise<void>;
 export type OnClickHandler = (event: OnClickEvent) => Promise<void>;

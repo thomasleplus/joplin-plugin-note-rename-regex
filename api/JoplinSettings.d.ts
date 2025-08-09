@@ -48,10 +48,12 @@ export default class JoplinSettings {
    *
    * Gets a setting value (only applies to setting you registered from your plugin)
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   value(key: string): Promise<any>;
   /**
    * Sets a setting value (only applies to setting you registered from your plugin)
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setValue(key: string, value: any): Promise<void>;
   /**
    * Gets global setting values, including app-specific settings and those set by other plugins.
@@ -60,10 +62,12 @@ export default class JoplinSettings {
    *
    * https://github.com/laurent22/joplin/blob/dev/packages/lib/models/settings/builtInMetadata.ts
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   globalValues(keys: string[]): Promise<any[]>;
   /**
    * @deprecated Use joplin.settings.globalValues()
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   globalValue(key: string): Promise<any>;
   /**
    * Called when one or multiple settings of your plugin have been changed.

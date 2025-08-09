@@ -1,6 +1,7 @@
 export default class JoplinClipboard {
   private electronClipboard_;
   private electronNativeImage_;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(electronClipboard: any, electronNativeImage: any);
   readText(): Promise<string>;
   writeText(text: string): Promise<void>;

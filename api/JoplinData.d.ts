@@ -46,9 +46,13 @@ export default class JoplinData {
   constructor(plugin: Plugin);
   private serializeApiBody;
   private pathToString;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   get(path: Path, query?: any): Promise<any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   post(path: Path, query?: any, body?: any, files?: any[]): Promise<any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   put(path: Path, query?: any, body?: any, files?: any[]): Promise<any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   delete(path: Path, query?: any): Promise<any>;
   itemType(itemId: string): Promise<ModelType>;
   resourcePath(resourceId: string): Promise<string>;

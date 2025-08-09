@@ -119,6 +119,7 @@ export interface ExportModule {
   onProcessItem(
     context: ExportContext,
     itemType: number,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     item: any,
   ): Promise<void>;
 
@@ -127,6 +128,7 @@ export interface ExportModule {
    */
   onProcessResource(
     context: ExportContext,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     resource: any,
     filePath: string,
   ): Promise<void>;

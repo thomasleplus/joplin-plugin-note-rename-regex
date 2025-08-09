@@ -20,6 +20,7 @@ interface ResourceChangeEvent {
   id: string;
 }
 interface NoteContentChangeEvent {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   note: any;
 }
 interface NoteSelectionChangeEvent {
@@ -46,6 +47,7 @@ type ResourceChangeHandler = WorkspaceEventHandler<ResourceChangeEvent>;
 export default class JoplinWorkspace {
   private store;
   private plugin;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(plugin: Plugin, store: any);
   /**
    * Called when a new note or notes are selected.
@@ -97,6 +99,7 @@ export default class JoplinWorkspace {
   /**
    * Gets the currently selected note. Will be `null` if no note is selected.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   selectedNote(): Promise<any>;
   /**
    * Gets the currently selected folder. In some cases, for example during

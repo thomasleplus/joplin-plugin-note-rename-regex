@@ -43,6 +43,7 @@ export default class JoplinViewsEditors {
   private store;
   private plugin;
   private activationCheckHandlers_;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(plugin: Plugin, store: any);
   private controller;
   /**
@@ -80,6 +81,7 @@ export default class JoplinViewsEditors {
   /**
    * See [[JoplinViewPanels]]
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   postMessage(handle: ViewHandle, message: any): void;
   /**
    * Tells whether the editor is active or not.

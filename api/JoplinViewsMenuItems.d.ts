@@ -12,6 +12,7 @@ import Plugin from "../Plugin";
 export default class JoplinViewsMenuItems {
   private store;
   private plugin;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(plugin: Plugin, store: any);
   /**
    * Creates a new menu item and associate it with the given command. You can specify under which menu the item should appear using the `location` parameter.

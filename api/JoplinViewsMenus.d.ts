@@ -12,6 +12,7 @@ import Plugin from "../Plugin";
 export default class JoplinViewsMenus {
   private store;
   private plugin;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(plugin: Plugin, store: any);
   private registerCommandAccelerators;
   /**

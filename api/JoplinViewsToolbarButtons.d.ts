@@ -10,6 +10,7 @@ import Plugin from "../Plugin";
 export default class JoplinViewsToolbarButtons {
   private store;
   private plugin;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(plugin: Plugin, store: any);
   /**
    * Creates a new toolbar button and associate it with the given command.

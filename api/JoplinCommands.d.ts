@@ -78,6 +78,7 @@ export default class JoplinCommands {
    * await joplin.commands.execute('newFolder', "SOME_FOLDER_ID");
    * ```
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   execute(commandName: string, ...args: any[]): Promise<any | void>;
   /**
    * Registers a new command.

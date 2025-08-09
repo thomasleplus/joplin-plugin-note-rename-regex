@@ -3,6 +3,7 @@ import Plugin from "../Plugin";
 // eslint-enable n/no-missing-import
 export default class JoplinWindow {
   private store_;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(_plugin: Plugin, store: any);
   /**
    * Loads a chrome CSS file. It will apply to the window UI elements, except

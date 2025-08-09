@@ -45,5 +45,6 @@ export default class JoplinPlugins {
   /**
    * @deprecated Use joplin.require()
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   require(_path: string): any;
 }

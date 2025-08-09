@@ -76,6 +76,7 @@ export default class JoplinImaging {
   ): Promise<Handle[]>;
   getPdfInfoFromPath(path: string): Promise<PdfInfo>;
   getPdfInfoFromResource(resourceId: string): Promise<PdfInfo>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   getSize(handle: Handle): Promise<any>;
   resize(handle: Handle, options?: ResizeOptions): Promise<string>;
   crop(handle: Handle, rectangle: Rectangle): Promise<string>;
@@ -91,6 +92,7 @@ export default class JoplinImaging {
    */
   toJpgResource(
     handle: Handle,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     resourceProps: any,
     quality?: number,
   ): Promise<import("../../database/types").ResourceEntity>;
@@ -100,6 +102,7 @@ export default class JoplinImaging {
    */
   toPngResource(
     handle: Handle,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     resourceProps: any,
   ): Promise<import("../../database/types").ResourceEntity>;
   /**

@@ -35,6 +35,7 @@ export default class JoplinViewsDialogs {
   private store;
   private plugin;
   private implementation_;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(implementation: any, plugin: Plugin, store: any);
   private controller;
   /**
@@ -56,6 +57,7 @@ export default class JoplinViewsDialogs {
    *
    * <span class="platform-desktop">desktop</span>
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   showOpenDialog(options: any): Promise<any>;
   /**
    * Sets the dialog HTML content

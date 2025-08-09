@@ -25,6 +25,7 @@ export default class JoplinViews {
   private editors_;
   private noteList_;
   private implementation_;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(implementation: any, plugin: Plugin, store: any);
   get dialogs(): JoplinViewsDialogs;
   get panels(): JoplinViewsPanels;

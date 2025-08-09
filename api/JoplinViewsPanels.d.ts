@@ -19,6 +19,7 @@ import { ViewHandle } from "./types";
 export default class JoplinViewsPanels {
   private store;
   private plugin;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(plugin: Plugin, store: any);
   private controller;
   /**
@@ -70,6 +71,7 @@ export default class JoplinViewsPanels {
    *
    * It is particularly useful when the webview needs to react to events emitted by the plugin or the joplin api.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   postMessage(handle: ViewHandle, message: any): void;
   /**
    * Shows the panel

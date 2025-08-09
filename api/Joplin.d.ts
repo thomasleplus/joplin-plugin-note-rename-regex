@@ -43,6 +43,7 @@ export default class Joplin {
   constructor(
     implementation: BasePlatformImplementation,
     plugin: Plugin,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     store: any,
   );
   get data(): JoplinData;
@@ -77,6 +78,7 @@ export default class Joplin {
    *
    * <span class="platform-desktop">desktop</span>
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   require(_path: string): any;
   versionInfo(): Promise<import("./types").VersionInfo>;
   /**
