@@ -1,6 +1,4 @@
-// eslint-disable node/no-missing-import
 import { ExportModule, ImportModule } from "./types";
-// eslint-enable node/no-missing-import
 /**
  * Provides a way to create modules to import external data into Joplin or to export notes into any arbitrary format.
  *

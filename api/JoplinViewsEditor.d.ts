@@ -1,7 +1,5 @@
-// eslint-disable node/no-missing-import
 import Plugin from "../Plugin";
 import { ActivationCheckCallback, ViewHandle, UpdateCallback } from "./types";
-// eslint-enable node/no-missing-import
 /**
  * Allows creating alternative note editors. You can create a view to handle loading and saving the
  * note, and do your own rendering.

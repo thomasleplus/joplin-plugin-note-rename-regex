@@ -1,7 +1,5 @@
-// eslint-disable node/no-missing-import
 import { CreateMenuItemOptions, MenuItemLocation } from "./types";
 import Plugin from "../Plugin";
-// eslint-enable node/no-missing-import
 /**
  * Allows creating and managing menu items.
  *

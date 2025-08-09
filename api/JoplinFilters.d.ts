@@ -1,6 +1,4 @@
-// eslint-disable node/no-missing-import
 import { FilterHandler } from "../../../eventManager";
-// eslint-enable node/no-missing-import
 /**
  * @ignore
  *

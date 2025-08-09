@@ -1,6 +1,4 @@
-// eslint-disable node/no-missing-import
 import Plugin from "../Plugin";
-// eslint-enable node/no-missing-import
 export default class JoplinWindow {
   private store_;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

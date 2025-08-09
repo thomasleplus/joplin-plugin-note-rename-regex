@@ -1,7 +1,5 @@
-// eslint-disable node/no-missing-import
 import Plugin from "../Plugin";
 import { SettingItem, SettingSection } from "./types";
-// eslint-enable node/no-missing-import
 export interface ChangeEvent {
   /**
    * Setting keys that have been changed

@@ -1,7 +1,5 @@
-// eslint-disable node/no-missing-import
 import Plugin from "../Plugin";
 import Joplin from "./Joplin";
-// eslint-enable node/no-missing-import
 /**
  * @ignore
  */

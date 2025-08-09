@@ -1,7 +1,5 @@
-// eslint-disable node/no-missing-import
 import Plugin from "../Plugin";
 import { ViewHandle } from "./types";
-// eslint-enable node/no-missing-import
 /**
  * Allows creating and managing view panels. View panels allow displaying any HTML
  * content (within a webview) and updating it in real-time. For example it
