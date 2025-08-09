@@ -31,7 +31,7 @@ jobs:
         run: npm install
       - name: Check outdated dependencies
         shell: bash
-	run: npm outdated --global
+        run: npm outdated --global
       - name: Build
         shell: bash
         run: npm run dist
