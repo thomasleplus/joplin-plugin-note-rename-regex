@@ -1,6 +1,6 @@
-/* eslint-disable node/no-missing-import. */
+/* eslint-disable node/no-missing-import */
 import Plugin from "../Plugin";
-/* eslint-enable node/no-missing-import. */
+/* eslint-enable node/no-missing-import */
 export default class JoplinWindow {
   private store_;
   constructor(_plugin: Plugin, store: any);

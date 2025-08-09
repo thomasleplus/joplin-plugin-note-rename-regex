@@ -1,7 +1,7 @@
-/* eslint-disable node/no-missing-import. */
+/* eslint-disable node/no-missing-import */
 import Plugin from "../Plugin";
 import { ContentScriptType } from "./types";
-/* eslint-enable node/no-missing-import. */
+/* eslint-enable node/no-missing-import */
 export default class JoplinContentScripts {
   private plugin;
   constructor(plugin: Plugin);

@@ -1,6 +1,6 @@
-/* eslint-disable node/no-missing-import. */
+/* eslint-disable node/no-missing-import */
 import type Joplin from "./Joplin";
-/* eslint-enable node/no-missing-import. */
+/* eslint-enable node/no-missing-import */
 
 declare const joplin: Joplin;
 

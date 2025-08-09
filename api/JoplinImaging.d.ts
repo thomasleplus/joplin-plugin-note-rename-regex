@@ -1,6 +1,6 @@
-/* eslint-disable node/no-missing-import. */
+/* eslint-disable node/no-missing-import */
 import { Rectangle } from "./types";
-/* eslint-enable node/no-missing-import. */
+/* eslint-enable node/no-missing-import */
 export interface CreateFromBufferOptions {
   width?: number;
   height?: number;
