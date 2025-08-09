@@ -1,7 +1,7 @@
-/* tslint:disable:node/no-missing-import */
+// tslint:disable:no-missing-import
 import Plugin from "../Plugin";
 import { SettingItem, SettingSection } from "./types";
-/* tslint:enable:node/no-missing-import */
+// tslint:enable:no-missing-import
 export interface ChangeEvent {
   /**
    * Setting keys that have been changed

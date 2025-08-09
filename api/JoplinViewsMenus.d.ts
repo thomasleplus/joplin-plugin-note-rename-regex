@@ -1,7 +1,7 @@
-/* tslint:disable:node/no-missing-import */
+// tslint:disable:no-missing-import
 import { MenuItem, MenuItemLocation } from "./types";
 import Plugin from "../Plugin";
-/* tslint:enable:node/no-missing-import */
+// tslint:enable:no-missing-import
 /**
  * Allows creating menus.
  *
