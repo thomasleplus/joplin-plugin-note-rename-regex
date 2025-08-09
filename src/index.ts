@@ -31,14 +31,14 @@ joplin.plugins.register({
     ) => {
       const noteIds = await joplin.workspace.selectedNoteIds();
       const notes: any[] = [];
-      for (let noteId of noteIds) {
+      for (const noteId of noteIds) {
         notes.push(
           await joplin.data.get(["notes", noteId], {
             fields: ["id", "title", "user_updated_time"],
           }),
         );
       }
-      for (let note of notes) {
+      for (const note of notes) {
         // User-updated time is kept the same so that note order is not affected
         await joplin.data.put(["notes", note.id], null, {
           title: renameRegexFn(note.title),

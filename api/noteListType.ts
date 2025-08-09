@@ -1,5 +1,3 @@
-/* eslint-disable multiline-comment-style */
-
 // eslint-disable n/no-missing-import
 import { Size } from "./types";
 // eslint-ensable n/no-missing-import

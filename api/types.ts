@@ -116,7 +116,6 @@ export interface ExportModule {
   /**
    * Called when an item needs to be processed. An "item" can be any Joplin object, such as a note, a folder, a notebook, etc.
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Old code before rule was applied
   onProcessItem(
     context: ExportContext,
     itemType: number,
@@ -126,7 +125,6 @@ export interface ExportModule {
   /**
    * Called when a resource file needs to be exported.
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Old code before rule was applied
   onProcessResource(
     context: ExportContext,
     resource: any,
