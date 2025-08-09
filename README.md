@@ -15,7 +15,7 @@ regular expression search and replace.
 
 This plugin works by altering the titles of the currently-selected
 notes. Select some notes in the notes list and two buttons will appear
-in the notes list toolbar: **Search and Replace Regex**.
+in the notes list toolbar: `Search and Replace Regex`.
 
 ![Select notes to alter their titles](./assets/note-rename-regex-toolbar-buttons.png)
 
@@ -23,7 +23,7 @@ There are similar options in the **Tools** menu and the right-click
 context menu for the selected notes. Click the button or menu item for
 the operation you'd like to perform.
 
-### Search and Replace Regex
+### `Search and Replace Regex`
 
 ![Popup window for Search and Replace command](./assets/note-rename-regex-replace.png)
 
