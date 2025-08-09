@@ -125,7 +125,6 @@ function validateCategories(categories) {
   if (!categories) return null;
   if (categories.length !== new Set(categories).size)
     throw new Error("Repeated categories are not allowed");
-  // eslint-disable-next-line @github/array-foreach -- Old code before rule was applied
   categories.forEach((category) => {
     if (
       !allPossibleCategories
