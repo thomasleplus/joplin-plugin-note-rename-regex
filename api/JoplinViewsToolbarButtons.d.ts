@@ -1,7 +1,7 @@
-/* eslint-disable node/no-missing-import */
+/* tslint:disable:node/no-missing-import */
 import { ToolbarButtonLocation } from "./types";
 import Plugin from "../Plugin";
-/* eslint-enable node/no-missing-import */
+/* tslint:enable:node/no-missing-import */
 /**
  * Allows creating and managing toolbar buttons.
  *

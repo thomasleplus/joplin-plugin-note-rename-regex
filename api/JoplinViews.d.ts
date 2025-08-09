@@ -1,4 +1,4 @@
-/* eslint-disable node/no-missing-import */
+/* tslint:disable:node/no-missing-import */
 import Plugin from "../Plugin";
 import JoplinViewsDialogs from "./JoplinViewsDialogs";
 import JoplinViewsMenuItems from "./JoplinViewsMenuItems";
@@ -7,7 +7,7 @@ import JoplinViewsToolbarButtons from "./JoplinViewsToolbarButtons";
 import JoplinViewsPanels from "./JoplinViewsPanels";
 import JoplinViewsNoteList from "./JoplinViewsNoteList";
 import JoplinViewsEditors from "./JoplinViewsEditor";
-/* eslint-enable node/no-missing-import */
+/* tslint:enable:node/no-missing-import */
 /**
  * This namespace provides access to view-related services.
  *

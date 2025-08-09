@@ -1,4 +1,4 @@
-/* eslint-disable multiline-comment-style */
+/* tslint:disable:multiline-comment-style */
 
 // =================================================================
 // Command API types
