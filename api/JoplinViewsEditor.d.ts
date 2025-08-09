@@ -60,7 +60,7 @@ export default class JoplinViewsEditors {
   /**
    * See [[JoplinViewPanels]]
    */
-  // tslint:disable-next-line:@typescript-eslint/no-unsafe-function-type
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   onMessage(handle: ViewHandle, callback: Function): Promise<void>;
   /**
    * Emitted when the editor can potentially be activated - this is for example when the current

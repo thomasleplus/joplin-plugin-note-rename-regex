@@ -52,7 +52,7 @@ export default class JoplinViewsPanels {
    * demo](https://github.com/laurent22/joplin/tree/dev/packages/app-cli/tests/support/plugins/post_messages) for more details.
    *
    */
-  // tslint:disable-next-line:@typescript-eslint/no-unsafe-function-type
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   onMessage(handle: ViewHandle, callback: Function): Promise<void>;
   /**
    * Sends a message to the webview.
