@@ -1,6 +1,6 @@
-/* tslint:disable:n/no-missing-import. */
+/* tslint:disable:node/no-missing-import. */
 import { ExportModule, ImportModule } from "./types";
-/* tslint:enable:n/no-missing-import. */
+/* tslint:enable:node/no-missing-import. */
 /**
  * Provides a way to create modules to import external data into Joplin or to export notes into any arbitrary format.
  *
