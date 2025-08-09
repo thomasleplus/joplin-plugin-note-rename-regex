@@ -8,7 +8,16 @@
   "author": "Thomas Leplus",
   "homepage_url": "https://github.com/thomasleplus/joplin-plugin-note-rename-regex",
   "repository_url": "https://github.com/thomasleplus/joplin-plugin-note-rename-regex",
-  "keywords": ["joplin", "plugin", "rename", "search", "replace", "regex", "regexp", "title"],
+  "keywords": [
+    "joplin",
+    "plugin",
+    "rename",
+    "search",
+    "replace",
+    "regex",
+    "regexp",
+    "title"
+  ],
   "categories": ["personal knowledge management", "productivity"],
   "screenshots": [
     {
