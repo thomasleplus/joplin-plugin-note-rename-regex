@@ -9,7 +9,7 @@ on:
 permissions: {}
 
 jobs:
-  check:
+  npm-outdated:
     name: Check with NPM Outdated
     runs-on: ubuntu-latest
     steps:
