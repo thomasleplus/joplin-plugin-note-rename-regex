@@ -66,6 +66,7 @@ jobs:
           LINTER_RULES_PATH: .
           DEFAULT_BRANCH: main
           ENFORCE_COMMITLINT_CONFIGURATION_CHECK: true
+          TYPESCRIPT_ES_CONFIG_FILE: ../../../tmp/lint/.eslint.config.mjs
           GITHUB_ACTIONS_ZIZMOR_CONFIG_FILE: .zizmor.yml
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
