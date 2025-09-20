@@ -9,7 +9,6 @@
 const path = require("path");
 const crypto = require("crypto");
 const fs = require("fs-extra");
-const chalk = require("chalk");
 const CopyPlugin = require("copy-webpack-plugin");
 const tar = require("tar");
 const glob = require("glob");
@@ -64,7 +63,8 @@ const getPackageJson = () => {
   return JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
 };
 
-function validatePackageJson() {
+async function validatePackageJson() {
+  const { default: chalk } = await import("chalk");
   const content = getPackageJson();
   if (!content.name || content.name.indexOf("joplin-plugin-") !== 0) {
     console.warn(
@@ -96,7 +96,8 @@ function fileSha256(filePath) {
   return crypto.createHash("sha256").update(content).digest("hex");
 }
 
-function currentGitInfo() {
+async function currentGitInfo() {
+  const { default: chalk } = await import("chalk");
   try {
     let branch = execSync("git rev-parse --abbrev-ref HEAD", { stdio: "pipe" })
       .toString()
@@ -185,7 +186,8 @@ function readManifest(manifestPath) {
   return output;
 }
 
-function createPluginArchive(sourceDir, destPath) {
+async function createPluginArchive(sourceDir, destPath) {
+  const { default: chalk } = await import("chalk");
   const distFiles = glob
     .sync(`${sourceDir}/**/*`, { nodir: true, windowsPathsNoEscape: true })
     .map((f) => f.substr(sourceDir.length + 1));
@@ -214,20 +216,25 @@ const writeManifest = (manifestPath, content) => {
   fs.writeFileSync(manifestPath, JSON.stringify(content, null, "\t"), "utf8");
 };
 
-function createPluginInfo(manifestPath, destPath, jplFilePath) {
+async function createPluginInfo(manifestPath, destPath, jplFilePath) {
   const contentText = fs.readFileSync(manifestPath, "utf8");
   const content = JSON.parse(contentText);
   content._publish_hash = `sha256:${fileSha256(jplFilePath)}`;
-  content._publish_commit = currentGitInfo();
+  content._publish_commit = await currentGitInfo();
   writeManifest(destPath, content);
 }
 
-function onBuildCompleted() {
+async function onBuildCompleted() {
+  const { default: chalk } = await import("chalk");
   try {
     fs.removeSync(path.resolve(publishDir, "index.js"));
-    createPluginArchive(distDir, pluginArchiveFilePath);
-    createPluginInfo(manifestPath, pluginInfoFilePath, pluginArchiveFilePath);
-    validatePackageJson();
+    await createPluginArchive(distDir, pluginArchiveFilePath);
+    await createPluginInfo(
+      manifestPath,
+      pluginInfoFilePath,
+      pluginArchiveFilePath,
+    );
+    await validatePackageJson();
   } catch (error) {
     console.error(chalk.red(error.message));
   }
@@ -338,7 +345,10 @@ const createArchiveConfig = {
   plugins: [
     {
       apply(compiler) {
-        compiler.hooks.done.tap("archiveOnBuildListener", onBuildCompleted);
+        compiler.hooks.done.tapPromise(
+          "archiveOnBuildListener",
+          onBuildCompleted,
+        );
       },
     },
   ],
@@ -396,7 +406,8 @@ const increaseVersion = (version) => {
   }
 };
 
-const updateVersion = () => {
+const updateVersion = async () => {
+  const { default: chalk } = await import("chalk");
   const packageJson = getPackageJson();
   packageJson.version = increaseVersion(packageJson.version);
   fs.writeFileSync(
@@ -420,7 +431,7 @@ const updateVersion = () => {
   }
 };
 
-function main(environ) {
+async function main(environ) {
   const configName = environ["joplin-plugin-config"];
   if (!configName)
     throw new Error(
@@ -460,18 +471,18 @@ function main(environ) {
   }
 
   if (configName === "updateVersion") {
-    updateVersion();
+    await updateVersion();
     return [];
   }
 
   return configs[configName];
 }
 
-module.exports = (env) => {
+module.exports = async (env) => {
   let exportedConfigs = [];
 
   try {
-    exportedConfigs = main(env);
+    exportedConfigs = await main(env);
   } catch (error) {
     console.error(error.message);
     process.exit(1);
