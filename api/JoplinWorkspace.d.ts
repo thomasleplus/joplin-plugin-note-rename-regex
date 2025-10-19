@@ -111,4 +111,3 @@ export default class JoplinWorkspace {
    */
   selectedNoteIds(): Promise<string[]>;
 }
-export {};

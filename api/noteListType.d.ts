@@ -324,4 +324,3 @@ export interface NoteListColumn {
 export type NoteListColumns = NoteListColumn[];
 export declare const defaultWidth = 100;
 export declare const defaultListColumns: () => NoteListColumns;
-export {};

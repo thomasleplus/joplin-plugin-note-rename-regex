@@ -82,7 +82,7 @@ async function validatePackageJson() {
     );
   }
 
-  if (content.scripts && content.scripts.postinstall) {
+  if (content.scripts?.postinstall) {
     console.warn(
       chalk.yellow(
         `WARNING: package.json contains a "postinstall" script. It is recommended to use a "prepare" script instead so that it is executed before publish. In ${packageJsonPath}`,

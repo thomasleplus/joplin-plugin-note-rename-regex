@@ -2,7 +2,7 @@ import joplin from "api";
 import { MenuItemLocation, ToolbarButtonLocation } from "api/types";
 
 joplin.plugins.register({
-  onStart: async function () {
+  onStart: async () => {
     console.info("Note Rename Regex plugin started!");
 
     const searchAndReplaceNoteNames = async (
@@ -56,7 +56,7 @@ joplin.plugins.register({
       execute: async () => {
         console.info("Note Rename Regex: Executing replace regex command");
         const result = await joplin.views.dialogs.open(replaceHandle);
-        if (result["id"] != "ok") {
+        if (result["id"] !== "ok") {
           return;
         }
         const formData = result["formData"]["replace"];

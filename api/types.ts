@@ -213,9 +213,7 @@ export interface Script {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export interface Disposable {
-  // dispose():void;
-}
+export type Disposable = {};
 
 export enum ModelType {
   Note = 1,
