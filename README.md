@@ -64,3 +64,7 @@ the line that include your file.
 ## License
 
 [CC0](./LICENSE)
+
+## Security
+
+Please read [SECURITY.md](SECURITY.md) for details on our security policy and how to report security vulnerabilities.
