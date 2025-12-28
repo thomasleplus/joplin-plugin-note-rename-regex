@@ -585,6 +585,7 @@ export interface ContentScriptModule {
   assets?: () => void;
 }
 
+// biome-ignore format: preserve multi-line extends clause
 export interface MarkdownItContentScriptModule extends Omit<
   ContentScriptModule,
   "plugin"
@@ -654,6 +655,7 @@ export interface CodeMirrorControl {
   };
 }
 
+// biome-ignore format: preserve multi-line extends clause
 export interface MarkdownEditorContentScriptModule extends Omit<
   ContentScriptModule,
   "plugin"
