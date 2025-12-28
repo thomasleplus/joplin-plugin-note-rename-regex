@@ -585,8 +585,10 @@ export interface ContentScriptModule {
   assets?: () => void;
 }
 
-export interface MarkdownItContentScriptModule
-  extends Omit<ContentScriptModule, "plugin"> {
+export interface MarkdownItContentScriptModule extends Omit<
+  ContentScriptModule,
+  "plugin"
+> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Old code before rule was applied
   plugin: (markdownIt: any, options: any) => any;
 }
@@ -652,8 +654,10 @@ export interface CodeMirrorControl {
   };
 }
 
-export interface MarkdownEditorContentScriptModule
-  extends Omit<ContentScriptModule, "plugin"> {
+export interface MarkdownEditorContentScriptModule extends Omit<
+  ContentScriptModule,
+  "plugin"
+> {
   plugin: (editorControl: CodeMirrorControl) => void;
 }
 
