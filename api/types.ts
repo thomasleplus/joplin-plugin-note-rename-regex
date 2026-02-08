@@ -825,14 +825,14 @@ export enum ContentScriptType {
    *
    * - **CodeMirror 5 only**: The `codeMirrorResources` key is an array of CodeMirror resources that
    *   will be loaded and attached to the CodeMirror module. These are made up
-   *   of addons, keymaps, and modes. For example, for a plugin that want's to
+   *   of addons, keymaps, and modes. For example, for a plugin that wants to
    *   enable clojure highlighting in code blocks. `codeMirrorResources` would
    *   be set to `['mode/clojure/clojure']`.
    *   This field is ignored on mobile and when the desktop beta editor is enabled.
    *
    * - **CodeMirror 5 only**: The `codeMirrorOptions` key contains all the
    *   [CodeMirror](https://codemirror.net/doc/manual.html#config) options
-   *   that will be set or changed by this plugin. New options can alse be
+   *   that will be set or changed by this plugin. New options can also be
    *   declared via
    *   [`CodeMirror.defineOption`](https://codemirror.net/doc/manual.html#defineOption),
    *   and then have their value set here. For example, a plugin that enables

@@ -59,7 +59,7 @@ export default class JoplinData {
    * arbitrary string, while the `value` can be of any type supported by
    * [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#description)
    *
-   * User data is synchronised across devices, and each value wil be merged based on their timestamp:
+   * User data is synchronised across devices, and each value will be merged based on their timestamp:
    *
    * - If value is modified by client 1, then modified by client 2, it will take the value from client 2
    * - If value is modified by client 1, then deleted by client 2, the value will be deleted after merge

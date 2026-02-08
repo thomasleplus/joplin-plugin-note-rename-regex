@@ -454,7 +454,7 @@ async function main(environ) {
     // copied to /dist, while those that do need it are correctly compiled.
     buildExtraScripts: buildExtraScriptConfigs(userConfig),
 
-    // Ths config is for creating the .jpl, which is done via the plugin, so
+    // This config is for creating the .jpl, which is done via the plugin, so
     // it doesn't actually need an entry and output, however webpack won't
     // run without this. So we give it an entry that we know is going to
     // exist and output in the publish dir. Then the plugin will delete this

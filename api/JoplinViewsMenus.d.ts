@@ -15,7 +15,7 @@ export default class JoplinViewsMenus {
   private registerCommandAccelerators;
   /**
    * Creates a new menu from the provided menu items and place it at the given location. As of now, it is only possible to place the
-   * menu as a sub-menu of the application build-in menus.
+   * menu as a sub-menu of the application built-in menus.
    */
   create(
     id: string,
