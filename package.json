@@ -19,7 +19,7 @@
     "chalk": "5.6.2",
     "copy-webpack-plugin": "13.0.1",
     "fs-extra": "11.3.3",
-    "glob": "13.0.1",
+    "glob": "13.0.2",
     "tar": "7.5.7",
     "ts-loader": "9.5.4",
     "typescript": "5.9.3",
