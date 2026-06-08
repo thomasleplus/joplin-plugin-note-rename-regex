@@ -20,7 +20,7 @@
     "copy-webpack-plugin": "14.0.0",
     "fs-extra": "11.3.5",
     "glob": "13.0.6",
-    "tar": "7.5.15",
+    "tar": "7.5.16",
     "ts-loader": "9.6.0",
     "typescript": "6.0.3",
     "webpack": "5.107.2",
