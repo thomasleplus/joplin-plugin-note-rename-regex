@@ -23,7 +23,7 @@
     "tar": "7.5.19",
     "ts-loader": "9.6.2",
     "typescript": "6.0.3",
-    "webpack": "5.108.2",
+    "webpack": "5.108.3",
     "webpack-cli": "7.1.0"
   },
   "eslintConfig": {
