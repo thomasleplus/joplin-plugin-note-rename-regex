@@ -18,7 +18,7 @@
     "@types/node": "26.1.1",
     "chalk": "5.6.2",
     "copy-webpack-plugin": "14.0.0",
-    "fs-extra": "11.3.6",
+    "fs-extra": "11.4.0",
     "glob": "13.0.6",
     "tar": "7.5.22",
     "ts-loader": "9.6.2",
