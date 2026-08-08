@@ -60,10 +60,7 @@ joplin.plugins.register({
           return;
         }
         const formData = result.formData.replace;
-        await searchAndReplaceNoteNames(
-          formData.search,
-          formData.replace,
-        );
+        await searchAndReplaceNoteNames(formData.search, formData.replace);
       },
     });
 
