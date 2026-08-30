@@ -12,6 +12,7 @@ publish/
 
 .config/
 *.bak
+*-e
 *~
 \#*\#
 .\#*
