@@ -10,6 +10,10 @@ updates:
     commit-message:
       prefix: build(deps)
       prefix-development: chore(dev-deps)
+    ignore:
+      # TypeScript 7 (native port) has no JS compiler API, which ts-loader needs.
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
