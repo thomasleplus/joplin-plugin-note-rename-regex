@@ -1,3 +1,9 @@
 {
-  "ignore": ["api/*.ts", "GENERATOR_DOC.md", "README.md"]
+  "ignore": [
+    "api/*.ts",
+    "GENERATOR_DOC.md",
+    "README.md",
+    ".github/workflows/osv-scanner-pr.yml",
+    ".github/workflows/osv-scanner.yml"
+  ]
 }
